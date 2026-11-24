@@ -473,3 +473,9 @@ img { max-width: 100%; height: auto; }
 .nt-footer__brand img{height:48px;width:auto;display:block}
 @media (max-width:560px){.site-logo img{height:38px}}
 .site-download + .site-download{margin-left:var(--space-6)}
+
+.site-swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-6)}
+.site-swatch{margin:0;background:var(--surface-raised);border-radius:var(--radius-md);box-shadow:var(--shadow-tile);overflow:hidden}
+.site-swatch img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
+.site-swatch figcaption{padding:var(--space-4) var(--space-6);font-family:var(--font-display);font-weight:700;font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--forest-900)}
+@media (max-width:760px){.site-swatches{grid-template-columns:1fr 1fr;gap:var(--space-4)}}
