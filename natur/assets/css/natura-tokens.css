@@ -1,0 +1,103 @@
+/* NATURA by ZIEGLER SCHALLSCHUTZ: Design-Tokens als CSS (generiert aus tokens.json) */
+:root, [data-theme="natur"], [data-theme="wald"] {
+  /* Rohpalette */
+  --forest-950: #0F2E1F;
+  --forest-900: #1E4530;
+  --pine-800: #214A44;
+  --sage-700: #3D6B5E;
+  --sage-500: #628E81;
+  --sage-300: #7BA599;
+  --fern-600: #5E7D5B;
+  --moss-400: #7A9E63;
+  --bark-950: #2E2016;
+  --bark-900: #482D1F;
+  --bark-700: #65422E;
+  --walnut-500: #7F583B;
+  --sand-400: #B09172;
+  --wheat-300: #E2BB8E;
+  --wheat-200: #EDCDA6;
+  --cream-100: #F3ECDD;
+  --paper-50: #F5F3F1;
+  --white: #FFFFFF;
+  --ink-950: #1A1A1A;
+  /* Hauptfarbe aus dem Prospekt F2026 (Silentum-Taupe, gemessen #B6AE9A) */
+  --taupe-700: #5E5849;
+  --taupe-600: #7A7261;
+  --taupe-500: #B6AE9A;
+  --taupe-300: #D4CEC0;
+  --taupe-200: #E6E2DE;
+  --taupe-100: #F1EEE8;
+  --ziegler-blue: #0D62A8;
+  --ziegler-orange: #EC5323;
+  --ziegler-logo-blue: #006CAF;
+  /* Flaechen (hell, Aufbau wie ziegler-schallschutz.at) */
+  --surface: #FFFFFF;
+  --surface-raised: #FFFFFF;
+  --surface-soft: var(--taupe-100);
+  --surface-hero: var(--taupe-500);
+  --surface-band: var(--taupe-500);
+  --surface-deep: var(--forest-950);
+  --ink: #1F2B24;
+  --ink-muted: #55594F;
+  --ink-inverse: var(--cream-100);
+  --heading: var(--forest-900);
+  --accent: var(--forest-900);
+  --accent-hover: var(--forest-950);
+  --on-accent: #FFFFFF;
+  --accent-text: var(--walnut-500);
+  --on-moss: #12241A;
+  --on-sand: var(--bark-950);
+  --on-bark: var(--cream-100);
+  --on-taupe: #1F2B24;
+  --link: var(--ziegler-blue);
+  --line: rgba(31,43,36,0.16);
+  --focus: var(--ziegler-blue);
+  --focus-on-dark: var(--wheat-300);
+  --shadow-tile: 0 10px 26px rgba(46,40,28,0.12);
+  --shadow-raised: 0 4px 14px rgba(46,40,28,0.10);
+  --shadow-button: 0 3px 10px rgba(30,69,48,0.28);
+}
+[data-theme="papier"] { --surface: #FFFFFF; --surface-soft: var(--paper-50); }
+/* Taupe-Zonen: dunklerer Nebentext fuer Kontrast */
+.on-taupe, .nt-hero, .nt-band, .site-cta { --ink-muted: #363B32; }
+/* Dunkle Zonen (Kopfleiste, Footer, Kennzahlen, Rechner-Ergebnis) */
+.on-dark, .site-topbar, .nt-footer, .site-sec--deep, .site-calc__result, .site-grid-vis, .site-lightbox {
+  --surface: var(--forest-950); --surface-raised: var(--forest-900);
+  --ink: var(--cream-100); --ink-muted: #CBD4C8; --heading: var(--cream-100);
+  --accent: var(--wheat-300); --accent-hover: var(--wheat-200); --on-accent: var(--bark-950); --accent-text: var(--wheat-300);
+  --link: var(--wheat-300); --line: rgba(243,236,221,0.2); --focus: var(--wheat-300);
+  color: var(--ink);
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --container-max: 1200px;
+  --content-max: 720px;
+  --grid-columns: 12;
+  --font-display: Verdana, "DejaVu Sans", Geneva, sans-serif;
+  --font-sans: Asap, "Segoe UI", Arial, sans-serif;
+}
+.display { font-family: var(--font-display); font-size: 52px; line-height: 60px; font-weight: 700; letter-spacing: 0.01em; text-transform: uppercase;  color: var(--heading);}
+.h1 { font-family: var(--font-display); font-size: 40px; line-height: 48px; font-weight: 700; letter-spacing: 0.01em; text-transform: uppercase;  color: var(--heading);}
+.h2 { font-family: var(--font-display); font-size: 30px; line-height: 38px; font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase;  color: var(--heading);}
+.h3 { font-family: var(--font-display); font-size: 20px; line-height: 28px; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase;  color: var(--heading);}
+.h4 { font-family: var(--font-display); font-size: 15px; line-height: 22px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;  color: var(--heading);}
+.eyebrow { font-family: var(--font-sans); font-size: 13px; line-height: 18px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
+.lead { font-family: var(--font-sans); font-size: 20px; line-height: 31px; font-weight: 400; }
+.body { font-family: var(--font-sans); font-size: 17px; line-height: 27px; font-weight: 400; }
+.body-strong { font-family: var(--font-sans); font-size: 17px; line-height: 27px; font-weight: 600; }
+.small { font-family: var(--font-sans); font-size: 14px; line-height: 21px; font-weight: 400; }
+.caption { font-family: var(--font-sans); font-size: 12px; line-height: 17px; font-weight: 400; }
+.button { font-family: var(--font-sans); font-size: 16px; line-height: 20px; font-weight: 600; letter-spacing: 0.02em; }
