@@ -385,6 +385,7 @@ input[type="range"] { accent-color: var(--accent); padding: 0; min-height: 32px;
 /* Coming-soon-Sticker */
 .nt-hero__media{position:relative}
 .site-sticker{position:absolute;right:14px;top:14px;z-index:3;background:#E8DFC8;color:var(--forest-900);border:2px dashed var(--forest-900);font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:6px;transform:rotate(6deg);box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.site-sticker--sm{right:12px;top:-10px;font-size:10px;padding:4px 9px;border-width:1.5px;transform:rotate(4deg);box-shadow:0 3px 8px rgba(0,0,0,.18)}
 .site-sticker--lg{right:clamp(16px,6vw,90px);top:clamp(16px,6vw,60px);font-size:clamp(16px,2.2vw,26px);padding:12px 22px}
 
 /* ---------- Optimierung: Barrierefreiheit, Mobil ---------- */
@@ -436,7 +437,7 @@ img { max-width: 100%; height: auto; }
 .site-download { display: inline-flex; align-items: center; gap: 8px; margin-top: var(--space-3); font-weight: 700; font-size: 15px; color: var(--link); }
 .site-download svg { width: 22px; height: 22px; flex: none; }
 .site-downloads { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); }
-.site-dl { display: flex; align-items: center; gap: var(--space-4); background: var(--surface-raised); border-radius: var(--radius-md); box-shadow: var(--shadow-tile); padding: var(--space-6); text-decoration: none; color: var(--ink); transition: transform .15s ease; }
+.site-dl { position: relative; display: flex; align-items: center; gap: var(--space-4); background: var(--surface-raised); border-radius: var(--radius-md); box-shadow: var(--shadow-tile); padding: var(--space-6); text-decoration: none; color: var(--ink); transition: transform .15s ease; }
 .nt-root a.site-dl { text-decoration: none; color: var(--ink); }
 .site-dl:hover { transform: translateY(-2px); }
 .site-dl svg { width: 36px; height: 36px; flex: none; color: var(--forest-900); }
